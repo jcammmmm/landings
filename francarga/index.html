@@ -96,9 +96,16 @@
       }
 
       .img-cover {
-        object-fit: cover;
         width: 100%;
         height: 100%;
+        object-fit: cover;
+      }
+      
+      .img-cover-circle {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
       }
     </style>
 
@@ -193,7 +200,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="pics/1.jpg" class="img-cover"></img>
+        <img src="pics/1.jpg" class="img-cover"/>
         <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
         <div class="container">
           <div class="carousel-caption text-start rounded-3 p-4 bg-body bg-opacity-75">
@@ -203,7 +210,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="pics/4.jpg" class="img-cover"></img>
+        <img src="pics/4.jpg" class="img-cover"/>
         <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
         <div class="container">
           <div class="carousel-caption rounded-3 p-4 bg-body bg-opacity-75">
@@ -213,7 +220,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="pics/7.jpg" class="img-cover"></img>
+        <img src="pics/7.jpg" class="img-cover"/>
         <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
         <div class="container">
           <div class="carousel-caption text-end bg-dark rounded-3 p-4 bg-body bg-opacity-75">
@@ -243,17 +250,20 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
+        <img class="img-cover-circle" src="pics/2.jpg"/>
         <h2 class="fw-normal">Transportamos</h2>
         <p>Es nuestra mision como organización.</p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
+        <img class="img-cover-circle" src="pics/3.jpg"/>
         <h2 class="fw-normal">Cuidamos</h2>
         <p>Sus mercancias son nuestras también.</p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+        <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
+        <img class="img-cover-circle" src="pics/8.jpg"/>
         <h2 class="fw-normal">Entregamos</h2>
         <p>Procesos de negocio claros y definidos.</p>
       </div><!-- /.col-lg-4 -->
