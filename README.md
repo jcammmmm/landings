@@ -1,14 +1,32 @@
 
+# Create Gif from video
+1. extract the part from your video if you need.
+2. 
+
+demo
+ffmpeg -i vid1.mp4 -ss 00:02:00 -t 00:02:03 out.mp4
+
+martilleo (seria bueno ponerlo para delante y para atras)
+ffmpeg -i vid2.mp4 -ss 00:08:09 -t 00:08:19 out.mp4
+
+pegando nuestra especialidad (ponerlo palante y pa tras)
+ffmpeg -i vid3.mp4 -ss 00:08:09 -t 00:08:19 out.mp4
+
+
+
+  ffmpeg -i vid1.mp4 \
+    -vf "fps=10,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" \
+    -loop 0 output.gif
+
 Command with only ffmpeg I find the other version better, because I can create timelapse also.
 
   ffmpeg -ss 00:02:00 -t 00:02:03 -i ismaelflorez-fabrica1.mp4 \
     -vf "fps=10,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" \
     -loop 0 output.gif
-    
-    
+        
 mp4 to gif. we recomend first to cut the video the feed that file to this command.
  
- ffmpeg -i short.mp4 -vf "fps=10,scale=160:-1:flags=lanczos" -c:v pam \
+ ffmpeg -i vid1.mp4 -vf "fps=10,scale=160:-1:flags=lanczos" -c:v pam \
     -f image2pipe - | \
     convert -delay 2 - -loop 0 -layers optimize output.gif
  
