@@ -1,0 +1,3 @@
+Please place your media files here (photos, audio, videos).
+We do this way to avoid versioning the in git and having a bit .git folder 
+and also to be able to deploy easy this kind of assets.

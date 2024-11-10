@@ -13,6 +13,12 @@ If you have a linux machine in the cloud:
 2. `cd /var/www`
 3. `git clone https://github.com/jcammmmm/landings`
 
+## Media Assets
+Please place your media files in `_pics` folder (photos, audio, videos).
+We do this way to avoid versioning them in git and having a big .git folder 
+and also to be able to deploy easily this kind of assets.
+
+
 # Create Gif from video
 1. extract the part from your video if you need.
 2. 
