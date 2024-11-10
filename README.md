@@ -1,4 +1,18 @@
 
+# How to run
+~~~
+python3.11 -m http.server
+curl http://localhost:8000
+~~~
+
+
+# Deployment
+If you have a linux machine in the cloud:
+
+1. `apt install apache2 git`
+2. `cd /var/www`
+3. `git clone https://github.com/jcammmmm/landings`
+
 # Create Gif from video
 1. extract the part from your video if you need.
 2. 
